@@ -1,0 +1,23 @@
+Feature,Importance
+loan_category_Very High,0.078571364
+marital_status_married,0.06361653
+marital_status_single,0.06323135
+loan_category_Medium,0.06267341
+employment_status_self-employed,0.059291426
+income_group_Moderate,0.059126485
+employment_status_unemployed,0.058437556
+loan_purpose_personal,0.05708034
+loan_category_Very Low,0.055213604
+loan_purpose_education,0.054165874
+loan_purpose_medical,0.051746264
+age_group_25-34,0.050175022
+loan_category_Low,0.04898544
+income_group_Middle,0.039967105
+income_group_Upper-Middle,0.039869446
+age_group_65+,0.036414992
+age_group_35-44,0.027917072
+age_group_45-54,0.027688935
+age_group_55-64,0.024294242
+age,0.018397707
+income,0.011920471
+loan_amount,0.011215426
