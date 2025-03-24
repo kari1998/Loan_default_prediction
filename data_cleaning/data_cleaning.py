@@ -33,7 +33,6 @@ sns.heatmap(numeric_df.corr(), annot=True, fmt=".2f", cmap="coolwarm", linewidth
 plt.title("Feature Correlation Matrix")
 plt.show()
 
-
 # Save cleaned data for further analysis
 df.to_csv("data/cleaned_loan_default_data.csv", index=False)
 print("Cleaned dataset saved successfully.")
