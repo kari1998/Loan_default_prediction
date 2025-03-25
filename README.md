@@ -77,7 +77,7 @@ A **correlation heatmap** was generated to analyze relationships between numeric
 
 #### **📊 Distribution of Numeric Features**
 
-📂 **Visual Output:** `Distribution_of_Numeric_Features.png`![Loan Default by Age Group](Visualizations/borrower_risk/Defaulters_by_Age_Group.png)
+📂 **Visual Output:** `Distribution_of_Numeric_Features.png`![Loan Default by Age Group](Visualizations/borrower_risk/Defaulters by Age Group.png)
 
 
 - **Loan Amount:** Right-skewed distribution indicating a few high-value loans.
