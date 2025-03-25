@@ -42,29 +42,15 @@ As part of the project, we conducted both univariate and bivariate analyses to e
 
 #### Key Findings:  
 
-1. **Loan Category Impact**  
-   - Borrowers with loans categorized as "Very High Risk" have a significantly higher default probability compared to those with "Medium" or "Low Risk" loans.  
-   *(Graph: Bar plot comparing loan categories vs. default rates)*  
 
-2. **Income Levels and Default**  
-   - Moderate to low-income borrowers are more prone to default, while high-income earners exhibit lower default tendencies.  
-   *(Graph: Box plot showing income distribution between defaulters and non-defaulters)*  
+ 
+   ### **Correlation Analysis**  
+A **correlation heatmap** was generated to explore relationships between numerical variables.  
 
-3. **Employment Status and Default**  
-   - Self-employed and unemployed individuals show a higher risk of defaulting on loans compared to salaried employees.  
-   *(Graph: Pie chart or bar chart of employment status vs. default rate)*  
+#### **Findings from the Correlation Heatmap:**  
+- **No strong correlations** were observed between `age`, `income`, `loan_amount`, and `has_default`.  
+- The **low correlation (~0.00)** between numerical features and `has_default` indicates that default behavior might be influenced more by categorical variables or complex, non-linear relationships, reinforcing the use of AI models.  
 
-4. **Loan Purpose**  
-   - Loans taken for personal and educational purposes tend to have higher default rates than those used for business or medical reasons.  
-   *(Graph: Bar plot comparing loan purposes vs. default rates)*  
-
-5. **Marital Status**  
-   - Married and single borrowers exhibit unique risk patterns. Married individuals might face higher financial obligations contributing to default risk.  
-   *(Graph: Bar plot showing marital status vs. default rates)*  
-
-6. **Age Factor**  
-   - Younger borrowers, especially those in their early 20s to 30s, are more likely to default than older borrowers.  
-   *(Graph: Line chart showing age vs. default probability or age distribution histogram)*  
 
 ## **📊 Model Training & Evaluation**  
 
@@ -83,31 +69,25 @@ As part of the project, we conducted both univariate and bivariate analyses to e
 📌 **Random Forest and XGBoost emerged as the most reliable models.**  
 
 ### **Loan Default by Age Group**  
-📂 **Visual Output:** `Defaulters_by_Age_Group.png`  
+📂 **Visual Output:** `Visualiation/borrower_risk/Defaulters_by_Age_Group.png`  
 - The highest default rates are observed in the **35-44 and 55-64** age groups.  
 - **Younger and older borrowers show lower default rates**.  
 
 📌 **This suggests that middle-aged borrowers may be at higher risk of default.**  
 
 ### **Loan Default by Loan Purpose**  
-📂 **Visual Output:** `Defaulters_by_Loan_Purpose.png`  
+📂 **Visual Output:** `Visualiation/borrower_risk/Defaulters_by_Loan_Purpose.png`  
 - **Education loans show a significant number of defaults**.  
 - Other categories like **personal and business loans** also exhibit moderate risk.  
 
 📌 **Loan purpose influences default risk, with education loans being particularly risky.**  
 
 ### **Loan Default by Marital Status**  
-📂 **Visual Output:** `Defaulters_by_Marriage_Status.png`  
+📂 **Visual Output:** `Visualiation/borrower_risk/Defaulters_by_Marriage_Status.png`  
 - **Married individuals have the highest default count**, closely followed by **single borrowers**.  
 
 📌 **Marital status plays a role, but further analysis is needed to determine whether income stability or family responsibilities contribute to this trend.**  
 
-### **Correlation Analysis**  
-A **correlation heatmap** was generated to explore relationships between numerical variables.  
-
-#### **Findings from the Correlation Heatmap:**  
-- **No strong correlations** were observed between `age`, `income`, `loan_amount`, and `has_default`.  
-- The **low correlation (~0.00)** between numerical features and `has_default` indicates that default behavior might be influenced more by categorical variables or complex, non-linear relationships, reinforcing the use of AI models.  
 
 ## **📊 Model Insights & Business Recommendations**  
 1️⃣ **Borrowers aged 35-44 and 55-64 are at higher risk of default.**  
