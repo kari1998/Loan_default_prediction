@@ -80,17 +80,44 @@ A **correlation heatmap** was generated to analyze relationships between numeric
 📂 **Visual Output:** ![Distribution of Numeric Features](Visualizations/Eda/Distribution%20of%20numeric%20features.png)
 
 
-- **Loan Amount:** Right-skewed distribution indicating a few high-value loans.
-- **Income Levels:** Right-skewed distribution with a small proportion of borrowers having very high incomes.
-- **Credit Scores:** Concentration in the mid-to-high range, indicating moderate-to-good creditworthiness.
+### **Insights from the Distribution of Numerical Features**  
 
-📌 **Key Insight:** Higher loan amounts and lower credit scores may increase default risk, requiring further investigation.
+#### **1️⃣ Age Distribution**  
+- The distribution appears roughly **uniform**, with no significant skewness.  
+- The **median age (red dashed line)** is around **40–45 years**, indicating a balanced distribution.  
+- The age range spans from approximately **18 to 70 years**.  
+
+🔹 **Insight:** Borrowers across all age groups are fairly evenly distributed, meaning age may not be a strong differentiator in loan default prediction.  
+
+---
+
+#### **2️⃣ Income Distribution**  
+- The distribution of **income** seems fairly uniform as well.  
+- The **median income (red dashed line)** is around **$75,000–$100,000**.  
+- There is no extreme skewness, but the data is slightly concentrated between **$50,000 and $125,000**.  
+
+🔹 **Insight:** The income levels are evenly spread, suggesting a diverse applicant pool in terms of earnings. Further analysis could determine if certain income brackets correlate with default risk.  
+
+
+#### **3️⃣ Loan Amount Distribution**  
+- The **loan amount distribution** is also fairly uniform with no extreme skewness.  
+- The **median loan amount** is approximately **$25,000–$30,000**.  
+- Loan amounts range widely from **$0 to $50,000**.  
+
+🔹 **Insight:** Loan amounts are evenly distributed, but a further breakdown of loan amounts by default status could reveal key risk patterns.  
+
+
+
+### **📌 Key Takeaways & Next Steps**  
+✅ No significant skewness in age, income, or loan amount distributions.  
+✅ Age and income are evenly spread, suggesting they might not strongly influence default alone.  
+
 
 #### **📊 Distribution of Categorical Features**
 
 📂 **Visual Output:**  ![Distribution of Categorical Features](Visualizations/Eda/Distribution%20of%20categorical%20features.png)
 
-- **Loan Purpose:** Education loans have a higher share of defaults compared to other purposes.
+- **Loan Purpose:** Personal loans have a higher share of defaults compared to other purposes.
 - **Employment Type:** Self-employed borrowers show slightly higher default rates.
 - **Marital Status:** Married borrowers exhibit a slightly higher default tendency.
 
