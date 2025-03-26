@@ -89,8 +89,6 @@ A **correlation heatmap** was generated to analyze relationships between numeric
 
 🔹 **Insight:** Borrowers across all age groups are fairly evenly distributed, meaning age may not be a strong differentiator in loan default prediction.  
 
----
-
 #### **2️⃣ Income Distribution**  
 - The distribution of **income** seems fairly uniform as well.  
 - The **median income (red dashed line)** is around **$75,000–$100,000**.  
