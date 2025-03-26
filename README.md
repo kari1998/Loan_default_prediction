@@ -2,7 +2,7 @@
 
 ## **Project Overview**
 
-This project aims to develop an **AI-driven loan default prediction model** using Python, advanced machine learning techniques, and interactive tools. The objective is to enhance financial decision-making by identifying high-risk borrowers and improving loan risk assessment strategies. The results will be showcased through an **interactive dashboard** and a **LinkedIn case study**, making the insights both accessible and actionable.
+This project aims to develop an **AI-driven loan default prediction model** using Python, advanced machine learning techniques, and interactive tools. The objective is to enhance financial decision-making by identifying high-risk borrowers and improving loan risk assessment strategies.
 
 ## **💼 Business Problem**
 
@@ -77,7 +77,7 @@ A **correlation heatmap** was generated to analyze relationships between numeric
 
 #### **📊 Distribution of Numeric Features**
 
-📂 **Visual Output:** `Distribution_of_Numeric_Features.png`![Loan Default by Age Group](Visualizations/borrower_risk/Defaulters by Age Group.png)
+📂 **Visual Output:** ![Distribution of Numeric Features](Visualizations/Eda/Distribution%20of%20numeric%20features.png)
 
 
 - **Loan Amount:** Right-skewed distribution indicating a few high-value loans.
@@ -88,7 +88,7 @@ A **correlation heatmap** was generated to analyze relationships between numeric
 
 #### **📊 Distribution of Categorical Features**
 
-📂 **Visual Output:** `Distribution_of_Categorical_Features.png`
+📂 **Visual Output:**  ![Distribution of Categorical Features](Visualizations/Eda/Distribution%20of%20categorical%20features.png)
 
 - **Loan Purpose:** Education loans have a higher share of defaults compared to other purposes.
 - **Employment Type:** Self-employed borrowers show slightly higher default rates.
@@ -113,6 +113,32 @@ A **correlation heatmap** was generated to analyze relationships between numeric
 | Neural Network      | 56.13%     | 56.00%    | 56.00% | 56.00%   | -       |
 
 📌 **Random Forest and XGBoost delivered the best performance, likely due to their ability to handle non-linear relationships and feature interactions.**
+
+### **📌 AI Implementation Summary**  
+
+- **Deep Learning (Neural Network):** Used a feedforward neural network with two hidden layers, achieving competitive performance.  
+- **Hyperparameter Tuning:** Optimized **Random Forest** and **XGBoost** for better accuracy.  
+- **AI Explainability (SHAP):** Identified key features influencing loan default predictions.  
+- **Ensemble Learning:** Combined models to enhance predictive performance.  
+- **AutoML (Optional):** Explored automated model selection for efficiency.  
+
+
+### 📌 Feature Importance Analysis
+To understand which factors influenced the model’s decision-making, we analyzed the feature importance from the best-performing model (Random Forest/XGBoost).
+
+📂 Visual Output: ![Xgboost_feature_importance](Visualizations/Modelling/xgboost_feature_importance.png)
+
+📂 Visual Output: ![Random Forest Feature Importance](Visualizations/Modelling/random_forest_feature_importance.png)
+
+Key Findings:
+
+Loan Amount is the most important predictor of default risk.
+
+Employment Status and Loan Purpose play a significant role in determining the likelihood of default.
+
+Marital Status has a moderate influence, aligning with EDA findings that married borrowers exhibit higher default tendencies.
+
+📌 Implication: Financial institutions should pay closer attention to loan amount thresholds, employment stability, and loan purposes when assessing borrower risk.
 
 ## **📊 Model Insights & Business Recommendations**
 
